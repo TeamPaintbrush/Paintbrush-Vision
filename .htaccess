@@ -1,6 +1,16 @@
 # Force all requests to go through Node.js app
 RewriteEngine On
 
+# Block access to public folder index.html
+<Files "public/index.html">
+    Require all denied
+</Files>
+
+# Block access to development templates
+<FilesMatch "index-template\.html">
+    Require all denied
+</FilesMatch>
+
 # Redirect all requests to Node.js app (if running on port 5000)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

@@ -17,9 +17,10 @@ app.use((req, res, next) => {
   res.setHeader('Pragma', 'no-cache');
   res.setHeader('Expires', '0');
   
-  // Kill any existing content and force our app
-  if (req.method === 'GET' && req.accepts('html') && !req.path.startsWith('/api/')) {
+  // FORCE production build for ANY HTML request - even if Plesk tries to serve public/index.html
+  if (req.method === 'GET' && (req.accepts('html') || req.path === '/' || req.path === '/index.html') && !req.path.startsWith('/api/')) {
     res.setHeader('Content-Type', 'text/html');
+    console.log(`🔥 FORCING production build for: ${req.path}`);
     return res.sendFile(path.join(__dirname, 'build', 'index.html'));
   }
   
