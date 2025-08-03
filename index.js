@@ -38,7 +38,24 @@ app.use(cors({
   ],
   credentials: true
 }));
+
+// Force override - immediately serve our React app for root requests
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 app.use(bodyParser.json({ limit: '10mb' }));
+
+// Override any default Plesk content - force our app to handle ALL requests
+app.use((req, res, next) => {
+  // Block any requests for default Plesk files
+  if (req.path.includes('default-website') || 
+      req.path.includes('plesk.page') || 
+      req.url.includes('assets.plesk.com')) {
+    return res.status(404).end();
+  }
+  next();
+});
 
 // Serve static files from React build
 app.use(express.static(path.join(__dirname, 'build')));
