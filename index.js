@@ -133,10 +133,13 @@ app.use((error, req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`🚀 Paintbrush Vision Server running on http://localhost:${PORT}`);
   console.log(`� OpenAI API Key configured: ${!!process.env.REACT_APP_PAINTBRUSH_VISION_KEY}`);
   console.log(`�📊 Rate limiting: 100 requests per 15 minutes`);
   console.log(`🔒 Strict endpoints: 10 requests per minute`);
   console.log(`📁 Serving React build from /build directory`);
 });
+
+// Set a longer timeout for image processing requests (5 minutes)
+server.setTimeout(300000);
