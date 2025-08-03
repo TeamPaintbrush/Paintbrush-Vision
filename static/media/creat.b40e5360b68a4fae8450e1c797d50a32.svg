@@ -1,0 +1,14 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame" clip-path="url(#clip0_78_73)">
+<path id="Vector" d="M50 26.6665H50.0333" stroke="#02000B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M40 70H20C17.3478 70 14.8043 68.9464 12.9289 67.0711C11.0536 65.1957 10 62.6522 10 60V20C10 17.3478 11.0536 14.8043 12.9289 12.9289C14.8043 11.0536 17.3478 10 20 10H60C62.6522 10 65.1957 11.0536 67.0711 12.9289C68.9464 14.8043 70 17.3478 70 20V40" stroke="#02000B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M10 53.3333L26.6667 36.6666C29.76 33.6899 33.5733 33.6899 36.6667 36.6666L49.9767 49.9766" stroke="#02000B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M46.6667 46.6666L50 43.3332C51.5667 41.8266 53.3167 41.0832 55.0667 41.0999" stroke="#02000B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M63.3334 74.9998C64.0177 72.1707 65.4688 69.585 67.527 67.5268C69.5852 65.4686 72.1709 64.0176 75 63.3332C72.1709 62.6488 69.5852 61.1978 67.527 59.1396C65.4688 57.0814 64.0177 54.4956 63.3334 51.6665C62.649 54.4956 61.198 57.0814 59.1398 59.1396C57.0816 61.1978 54.4958 62.6488 51.6667 63.3332C54.4958 64.0176 57.0816 65.4686 59.1398 67.5268C61.198 69.585 62.649 72.1707 63.3334 74.9998Z" stroke="#02000B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_78_73">
+<rect width="80" height="80" fill="white"/>
+</clipPath>
+</defs>
+</svg>
