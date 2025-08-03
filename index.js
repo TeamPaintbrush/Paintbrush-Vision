@@ -9,6 +9,19 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || process.env.SERVER_PORT || 5000;
 
+// NUCLEAR OPTION: Override ALL requests immediately - bypass any Plesk interference
+app.use((req, res, next) => {
+  // Force Content-Type to prevent any default content interpretation
+  res.setHeader('X-Powered-By', 'Paintbrush Vision');
+  
+  // Immediately serve our React app for any HTML requests
+  if (req.accepts('html') && !req.path.startsWith('/api/')) {
+    return res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  }
+  
+  next();
+});
+
 console.log(`🔧 Server will start on port: ${PORT}`);
 console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
 console.log(`📍 Expected frontend URLs: http://localhost:3000, http://localhost:3005`);
@@ -38,11 +51,6 @@ app.use(cors({
   ],
   credentials: true
 }));
-
-// Force override - immediately serve our React app for root requests
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 app.use(bodyParser.json({ limit: '10mb' }));
 
