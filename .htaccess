@@ -1,0 +1,21 @@
+# Force all requests to go through Node.js app
+RewriteEngine On
+
+# Redirect all requests to Node.js app (if running on port 5000)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ http://localhost:5000/$1 [P,L]
+
+# Alternative: Force index.html to be ignored
+<Files "index.html">
+    Require all denied
+</Files>
+
+# Block default Plesk content
+<FilesMatch "default-website.*">
+    Require all denied
+</FilesMatch>
+
+# Set Node.js as handler for all requests
+AddHandler application/x-httpd-nodejs .js
+DirectoryIndex index.js

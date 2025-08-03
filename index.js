@@ -13,9 +13,13 @@ const PORT = process.env.PORT || process.env.SERVER_PORT || 5000;
 app.use((req, res, next) => {
   // Force Content-Type to prevent any default content interpretation
   res.setHeader('X-Powered-By', 'Paintbrush Vision');
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
   
-  // Immediately serve our React app for any HTML requests
-  if (req.accepts('html') && !req.path.startsWith('/api/')) {
+  // Kill any existing content and force our app
+  if (req.method === 'GET' && req.accepts('html') && !req.path.startsWith('/api/')) {
+    res.setHeader('Content-Type', 'text/html');
     return res.sendFile(path.join(__dirname, 'build', 'index.html'));
   }
   
