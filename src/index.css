@@ -1,0 +1,27 @@
+/* Light mode (default) */
+:root {
+  --primary-color: #FFFFFF;
+  --border-colors: #E5E5E5;
+  --fix-header: rgb(255 255 255 / 50%);
+  --text-color: #02000B;
+  --icons-filter: brightness(0) saturate(100%) invert(0%) sepia(94%) saturate(7500%) hue-rotate(340deg) brightness(97%) contrast(106%);
+  --fix-grid-lines: linear-gradient(180deg, #E5E5E5 0%, #000 100%);
+  --sub-text: #6F6F6F;
+  --circle-blur: linear-gradient(146deg, rgba(0, 0, 0, 0.05) 20.09%, rgba(0, 0, 0, 0.02) 79.91%);
+  --price-box: #F5F6F7;
+  --hover-bg: #DFDFDF;
+}
+
+.dark {
+  --primary-color: #02000B;
+  --border-colors: #212121;
+  --fix-header: rgb(0 0 0 / 50%);
+  --section-heading: #212121;
+  --text-color: #FFFFFF;
+  --icons-filter: brightness(0) saturate(100%) invert(99%) sepia(15%) saturate(85%) hue-rotate(344deg) brightness(111%) contrast(100%);
+  --fix-grid-lines: linear-gradient(180deg, #212121 0%, #FFF 100%);
+  --sub-text: #848484;
+  --circle-blur: linear-gradient(146deg, rgba(255, 255, 255, 0.10) 20.09%, rgba(255, 255, 255, 0.05) 79.91%);
+  --price-box: #131313;
+  --hover-bg: #02000B;
+}

@@ -1,0 +1,721 @@
+@media (min-width: 1650px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1290px !important;
+    }
+}
+@media (max-width: 1550px) {
+    .character {
+        font-size: 28px;
+    }
+}
+@media (max-width: 1399px) {
+    .nav-links-mn {
+        gap: 50px;
+    }
+    .ai-img-get-text {
+        padding-top: 70px;
+        padding-bottom: 15px;
+    }
+    .imgGenerator {
+        font-size: 90px;
+    }
+    .bring {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .section-two {
+        padding: 70px 0 40px;
+    }
+    .section-three,
+    .section-four,
+    .section-five,
+    .section-six,
+    .section-seven,
+    .section-eight,
+    .section-nine,
+    .section-ten,
+    .section-blog,
+    .section-community,
+    .footer-section {
+        padding: 70px 0;
+    }
+    .character {
+        font-size: 25px;
+    }
+    .creative-design-slider {
+        width: 100%;
+        max-width: calc(1399px - 150px);
+        margin-left: auto;
+    }
+}
+@media (max-width: 1199px) {
+    .header-buttons-main {
+        margin-bottom: 20px;
+    }
+    .side-menu-logo {
+        display: flex;
+    }
+    .nav-links {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .nav-links-mn {
+        display: none;
+        flex-direction: column;
+        width: 300px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        overflow-y: auto;
+        transform: translateX(-100%);
+        padding: 12px;
+        gap: 25px;
+        z-index: 10000;
+        background: var(--primary-color);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.245);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .nav-links-mn.active {
+        display: flex;
+        animation: slideIn 0.3s ease forwards;
+    }
+    .nav-links-mn.closing {
+        animation: slideOut 0.3s ease forwards;
+    }
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideOut {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .menu-icon img {
+        width: 35px;
+        filter: var(--icons-filter);
+    }
+    .dso-flex{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .overlaytoggle {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        z-index: 99;
+        display: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .overlaytoggle.active {
+        display: block;
+        opacity: 1;
+    }
+    .xplore {
+        font-size: 55px;
+    }
+    .stunnii {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 10px;
+    }
+    .masonry-grid {
+        column-count: 3;
+        column-gap: 20px;
+        margin-top: 40px;
+    }
+    .grid-item {
+        margin-bottom: 15px;
+    }
+    .creative-design-slider {
+        margin-top: 30px;
+    }
+    .disc1 {
+        position: unset;
+    }
+    .disc2 {
+        display: none;
+    }
+    .gendseratio {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .scanner-main {
+        padding: 30px;
+        gap: 40px;
+    }
+    .enerat-text {
+        font-size: 40px;
+    }
+    .accordion-button {
+        font-size: 21px;
+        line-height: 32px;
+    }
+    .accordion-button.collapsed {
+        padding: 25px;
+    }
+    .eque {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .folllow-now {
+        padding: 15px 15px;
+    }
+    .d-update {
+        font-size: 25px;
+        margin: 30px 0;
+    }
+    .creajkbn {
+        font-size: 70px;
+    }
+    .genStartd-min {
+        margin: 50px 0;
+    }
+    .community-box-main {
+        padding: 20px 20px 25px 20px;
+    }
+}
+@media (max-width: 991px) {
+    .imgGenerator {
+        font-size: 65px;
+    }
+    .ai-img-get-text {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .bring {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .inputGenerate {
+        border-radius: 60px;
+        padding: 10px 10px 10px 25px;
+        margin: 20px auto 20px auto;
+    }
+    .butn-drop-down-main {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        gap: 0;
+    }
+    .generateImage {
+        border-radius: 32px;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 30px;
+        padding: 10px 18px;
+        width: 200px;
+    }
+    .custom-dropdown input {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .custom-dropdown {
+        position: relative;
+        width: 100%;
+        max-width: 140px;
+    }
+    .inputGenerate .img-gner {
+        font-size: 18px;
+    }
+    .expand-img-main {
+        margin-top: 70px;
+    }
+    .section-two {
+        padding: 50px 0 35px;
+    }
+    .section-three,
+    .section-four,
+    .section-five,
+    .section-six,
+    .section-seven,
+    .section-eight,
+    .section-nine,
+    .section-ten,
+    .section-blog,
+    .section-community,
+    .footer-section {
+        padding: 50px 0;
+    }
+    .masonry-grid {
+        column-count: 2;
+        margin-top: 30px;
+    }
+    .xplore {
+        font-size: 45px;
+    }
+    .slider-box-main {
+        padding: 15px;
+    }
+    .character {
+        padding: 20px 0 9px;
+        line-height: 36px;
+    }
+    .img-middel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .disc1 {
+        animation: none;
+    }
+    .aircarft-row {
+        flex-direction: column-reverse;
+    }
+    .adbance,
+    .unnleas {
+        max-width: 100%;
+        text-align: center;
+    }
+    .unnleas {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .aircraf {
+        padding: 20px 20px;
+        font-size: 18px;
+    }
+    .row-imgDisc {
+        margin-top: 30px;
+    }
+    .row-imgDisc img {
+        margin-top: 20px;
+    }
+    .adbance {
+        font-size: 26px;
+        line-height: 30px;
+        padding-bottom: 8px;
+    }
+    .features-cir {
+        width: 90px;
+        height: 90px;
+    }
+    .features-cir-main {
+        position: relative;
+        width: 90px;
+        height: 90px;
+    }
+    .features-cir img {
+        width: 60px;
+    }
+    .img-bg-circle {
+        width: 40px;
+        height: 40px;
+        bottom: -10px;
+    }
+    .home-features-row {
+        gap: 30px 0;
+        margin-top: 30px;
+    }
+    .milions-slider-box {
+        padding: 20px;
+    }
+    .millionsSlider .slick-slide>div {
+        padding: 0 9px;
+    }
+    .img-person-text-main {
+        margin-bottom: 15px;
+    }
+    .mill-main {
+        margin: 30px 0;
+    }
+    .ueseyss {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .logos {
+        margin-top: 25px;
+    }
+    .marquee-img-main {
+        margin: 0px 10px;
+    }
+    .pricing-rows {
+        margin-top: 30px;
+        gap: 30px;
+    }
+    .plan-price {
+        font-size: 46px;
+    }
+    .price-plan-btn {
+        margin-top: 20px;
+    }
+    .plan-body {
+        margin-top: 30px;
+    }
+    .play-app-store-main {
+        justify-content: center;
+    }
+    .scanner-main {
+        flex-direction: column;
+        gap: 25px
+    }
+    .enerat-text {
+        font-size: 33px;
+        text-align: center;
+    }
+    .amles {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 10px 0 20px;
+        text-align: center;
+    }
+    .sdh {
+        margin-bottom: 30px;
+    }
+    .text-img-sec-text,
+    .text-img-sec-text-sub {
+        text-align: center;
+    }
+    .blog-row {
+        margin-top: 30px;
+        gap: 30px 0;
+    }
+    .comminity-row-main {
+        margin-top: 30px;
+        gap: 20px 0;
+    }
+    .creajkbn {
+        font-size: 65px;
+    }
+    .genStartd-min {
+        margin: 40px 0;
+    }
+    .copyright-text,
+    .copyright-text a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .expand-img {
+        padding: 0 8px;
+    }
+}
+@media (max-width: 767px) {
+    .imgGenerator {
+        font-size: 45px;
+    }
+    .bring {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .ai-img-get-text {
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+    .inputGenerate {
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .butn-drop-down-main {
+        padding-left: 0;
+    }
+    .expand-img-main {
+        margin-top: 50px;
+    }
+    .section-two {
+        padding: 30px 0 10px;
+    }
+    .section-three,
+    .section-four,
+    .section-five,
+    .section-six,
+    .section-seven,
+    .section-eight,
+    .section-nine,
+    .section-ten,
+    .section-blog,
+    .section-community,
+    .footer-section {
+        padding: 30px 0;
+    }
+    .masonry-grid {
+        column-count: 1;
+        margin-top: 30px;
+    }
+    .xplore {
+        font-size: 35px;
+    }
+    .stunnii {
+        font-size: 18px;
+        line-height: 28px;
+        padding-top: 8px;
+    }
+    .buildd {
+        font-size: 17px;
+    }
+    .home-features-row {
+        gap: 20px 0;
+        margin-top: 20px;
+    }
+    .features-cir-main {
+        margin: 0 auto 9px auto;
+    }
+    .gendseratio {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .eugiat {
+        line-height: 28px;
+        padding-top: 5px;
+    }
+    .price-box-main {
+        padding: 20px;
+    }
+    .pricing-rows {
+        gap: 20px;
+    }
+    .accordion-button {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .accordion-button.collapsed {
+        padding: 20px;
+    }
+    .accordion-button:not(.collapsed) {
+        padding: 20px 20px 0 20px;
+    }
+    .accordion-body {
+        padding: 15px 20px 20px 20px;
+    }
+    .blog-img {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .blog-row {
+        margin-top: 20px;
+        gap: 20px 0;
+    }
+    .eque {
+        padding-top: 5px;
+    }
+    .folllow-now {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+    .creajkbn {
+        font-size: 50px;
+    }
+    .genStartd-min {
+        margin: 30px 0;
+    }
+    .copyright-text,
+    .copyright-text a {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .slider-container {
+        display: none;
+    }
+    .form-col {
+        gap: 35px;
+    }
+    .form-body {
+        position: unset;
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 575px) {
+    header {
+        padding: 12px 12px;
+    }
+    .grid-lines {
+        max-width: 500px;
+    }
+    .masonry-grid {
+        margin-top: 20px;
+    }
+    .grid-item {
+        margin-bottom: 10px;
+    }
+    .expand-img-main {
+        margin-top: 20px ;
+    }
+    .character {
+        padding: 14px 0 9px;
+        line-height: 35px;
+        font-size: 22px;
+    }
+    .creative-design-slider {
+        margin-top: 20px;
+    }
+    .row-imgDisc {
+        margin-top: 20px;
+    }
+    .aircraf {
+        padding: 10px 20px;
+        font-size: 18px;
+        max-width: 330px;
+        left: 20px;
+        right: 20px;
+    }
+    .adbance {
+        font-size: 23px;
+        line-height: 25px;
+        padding-bottom: 4px;
+    }
+    .mill-main {
+        margin: 20px 0;
+    }
+    .plan-body li {
+        font-size: 16px;
+        line-height: 24px;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .plan-price {
+        font-size: 40px;
+    }
+    .enerat-text {
+        font-size: 28px;
+    }
+    .amles {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 5px 0 15px;
+    }
+    .play-app-store-main {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .scanner-main {
+        padding: 20px;
+    }
+    .sdh {
+        margin-bottom: 20px;
+    }
+    .accordion-button.collapsed {
+        padding: 15px;
+    }
+    .d-update {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+    .comminity-row-main {
+        margin-top: 20px;
+    }
+    .masonry-grid-pop {
+        column-count: 2;
+        column-gap: 15px;
+        margin-top: 18px;
+    }
+    .liqua {
+        font-size: 25px;
+        line-height: 30px;
+        padding-top: 10px;
+    }
+    .pop-img-gen-btn {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .blog-singl-img {
+        margin: 20px 0px;
+    }
+    .approach {
+        font-size: 26px;
+        line-height: 36px;
+        margin: 16px auto 0 auto;
+    }
+    .wildlife-img-group-sub {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        margin: 15px 0;
+    }
+    .footer-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .cott-main p {
+        font-size: 18px;
+        line-height: 26px;
+        padding-top: 14px;
+    }
+    button.bottom-top-button {
+        position: fixed;
+        right: 20px;
+        bottom: 15px;
+        width: 45px;
+        height: 45px;
+        font-size: 27px;
+    }
+}
+@media (max-width: 449px) {
+    .imgGenerator {
+        font-size: 36px;
+    }
+    .bring {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .generateImage {
+        font-size: 17px;
+        font-weight: 500;
+        padding: 10px 17px;
+        width: 175px;
+    }
+    .xplore {
+        font-size: 28px;
+    }
+    .creajkbn {
+        font-size: 40px;
+    }
+    .diamond-next-btn h3,
+    .dimond-close-btn {
+        font-size: 15px;
+    }
+}
+@media (max-width: 375px) {
+    .ai-img-get-text {
+        padding-top: 22px;
+        padding-bottom: 3px;
+    }
+    .imgGenerator {
+        font-size: 30px;
+    }
+    .xplore {
+        font-size: 26px;
+    }
+    .butn-drop-down-main {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    .creajkbn {
+        font-size: 38px;
+    }
+}
